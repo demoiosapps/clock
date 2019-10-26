@@ -1,5 +1,5 @@
 # Analog Clock UI Component
-UI component that indicates current time.
+UI component that indicates the time as an analog clock.
 
 ![](preview.gif)
 
