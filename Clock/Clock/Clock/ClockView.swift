@@ -48,6 +48,7 @@ final class ClockView: UIView {
     
     func stop() {
         clear()
+        startTime = nil
     }
     
     // MARK: - Init
@@ -62,11 +63,13 @@ final class ClockView: UIView {
     }
     
     private func define() {
+        let isDefined = faceLayer != nil
         clear()
         if startTime != nil {
             startTime = startTime?.addingTimeInterval(-startTime!.timeIntervalSinceNow)
             updateHands()
-        } else if autostart {
+        } else if !isDefined
+            && autostart {
             start()
         }
     }
