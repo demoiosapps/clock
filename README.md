@@ -5,7 +5,7 @@ UI component that indicates the time as an analog clock.
 
 ### Usage
 
-Just use like any regular view in storyboard.
+Just use it like any regular view in storyboard.
 
 You can start clock from any time.
 ```Swift
